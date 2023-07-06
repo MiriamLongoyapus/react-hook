@@ -1,0 +1,7 @@
+.item{
+    text-align: center;
+}
+.item, img{
+    height: 60vh;
+    width: 60%;
+}

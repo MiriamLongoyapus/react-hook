@@ -21,15 +21,14 @@ const ProductDisplayPage = () => {
     return <p>Loading product details...</p>;
   }
   return (
-    <div className='prod'>
-      <h1>Product ProductDisplay</h1>
-      <div className='prods'>
-        <img src={product.thumbnail} alt={product.title} className='images'/>
+    <div className='item'>
+      <h1>Product Display</h1>
+        <img src={product.thumbnail} alt={product.title} className='img'/>
         <h2>{product.title}</h2>
         <p>{product.brand}</p>
         <p>Ksh {product.price}</p>
-      </div>
     </div>
+    
   );
 };
 export default ProductDisplayPage;

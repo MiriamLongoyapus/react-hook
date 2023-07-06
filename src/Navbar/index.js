@@ -3,10 +3,12 @@ import './style.css'
 
 const Navbar = () => {
     return(
-        <nav className="navbar">
-            <a href="/login">Login</a>
-            <a href="/products"> Products</a>
-        </nav>
+        <div className="navbar">
+            <li><a href="/login">Login</a></li>
+            <li><a href="/products"> Products</a></li>
+            
+            
+        </div>
     )
 }
 export default Navbar;

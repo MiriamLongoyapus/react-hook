@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 import './style.css';
-import{createBrowserRouter,RouterProvider,Route,Link,} from "react-router-dom"
+import{createBrowserRouter,RouterProvider,Route,Link} from "react-router-dom"
 const Products = ()=>{
     const [products,setProducts] = useState ([]);
     const [loading,setLoading ] =useState(false)
@@ -26,7 +26,7 @@ const Products = ()=>{
     }
     return (
       <div>
- <Link to={`/AddProducts/` }className="btn">
+ <Link to={`/AddProducts/` }className="button">
             <button type="submit" className="add">Add a new product</button >
           </Link>
         <div className="products">
@@ -36,8 +36,8 @@ const Products = ()=>{
           <h3>{item.title}</h3>
           <h3>Ksh {item.price}</h3>
           <h3>{item.discountPercentage}%</h3>
-          <Link to={`/product/${item.id}` }className="btn">
-            <button type="submit" className="view">View Details</button >
+          <Link to={`/product/${item.id}` }className="button">
+            <button type="submit" className="details">View Details</button >
           </Link>
             </div>
         ))}
