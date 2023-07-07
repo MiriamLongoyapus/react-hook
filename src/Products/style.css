@@ -4,14 +4,16 @@
 .products, img{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 3%;
-    height: 30vh;
-    width: 100%;
-
+    gap: 42px;
+    width: 98%;
 }
 .products, h3{
-    margin-left: 2%;
+    margin-left: 5%;
 }
 .productsdetails{
     background-color: rgb(193, 193, 226);
+}
+.button{
+    margin-left: 50%;
+    background-color: rgb(180, 147, 211);
 }

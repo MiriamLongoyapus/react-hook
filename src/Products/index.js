@@ -26,9 +26,13 @@ const Products = ()=>{
     }
     return (
       <div>
+        <br/>
+        <br/>
  <Link to={`/AddProducts/` }className="button">
             <button type="submit" className="add">Add a new product</button >
           </Link>
+          <br/>
+          <br/>
         <div className="products">
         {products.map(item =>(
           <div  key={item.id}>

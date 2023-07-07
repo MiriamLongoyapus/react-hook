@@ -1,7 +1,7 @@
 import React, { useState }  from "react";
 import './style.css'
 import { Link } from 'react-router-dom';
-const login=()=>{
+const Login=()=>{
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     console.log(username);
@@ -45,4 +45,4 @@ const login=()=>{
         </div>
     )
 }
-export default login;
+export default Login;
